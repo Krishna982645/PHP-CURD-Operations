@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(136, 136, 134);
+    padding: 0 10px;
+}
+
+.container {
+    border: 2px solid black;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.125);
+}
+
+.container .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    ;
+    color: rgb(136, 136, 134);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .form .input_field {
+    margin: 15px;
+    display: flex;
+    align-content: center;
+
+}
+
+.container .form .input_field label {
+    margin-right: 10px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.container .form .input_field .input {
+    outline: none;
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(136, 136, 134);
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.container .form .input_field .text {
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(136, 136, 134);
+    font-size: 15px;
+    padding: 8px, 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    resize: none;
+    height: 70px;
+}
+
+.container .form .input_field .selection select {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border: 1px solid rgb(136, 136, 134);
+    border-radius: radius;
+    outline: none;
+}
+
+.container .form .input_field .selection::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    /* border: 8px solid black; */
+    /* border-color: rgb(136, 136, 134) transparent transparent transparent;
+    pointer-events: none; */
+}
+
+.container .form .input_field .selection {
+
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.container .form .input_field .input:focus,
+.container .form .input_field .text:focus,
+.container .form .input_field select:focus{
+    border:  1px solid #fec107 ;
+}
+.container .form .input_field p{
+    margin-left: -185px;
+}
+
+ .container .form .input_field  .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    background-color: rgb(136, 136, 134);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px;outline: none;
+}.container .form .input_field:last-child{
+    margin-bottom: 0;
+
+}.container .form .input_field  .btn:hover{
+    background: gray;
+}
+@media(max-width:420px){
+    .container .form .input_field {
+        flex-direction:column;
+        align-items: flex-start;
+    }.container .form  .input_field  label{
+        margin-bottom: 5px;
+    }.container .form .input_field.terms{
+         flex-direction:row ;
+    }
+
+}
